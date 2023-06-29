@@ -1,0 +1,250 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+	<style>
+	
+	*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:cyan;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}    
+.navbar ul li{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 9px 26px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: black;
+    color: gold;
+    box-shadow: 0 0 10px white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    background: url(image.jpg) no-repeat center center/cover;
+    height: 650px;
+    width: 320px;
+    z-index: -1;
+    opacity: .8;
+}
+.heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+	background-color: black;
+}
+#about h1{
+    color: white;
+    margin: 50px;
+}
+.about{
+    display: flex;
+	color: white;
+}
+.about img{
+    width: 220px;
+    height: 300px;
+    padding: 0px 30px;
+}
+.name{
+    padding: 15px;
+}
+.name h2{
+    font-size: 2.1rem;
+}
+.name p{
+    font-size: 1.4rem;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+	color: white;
+	font-weight: bold;
+	 background-color: rgba(0, 0, 0, 0.5);
+}
+#skills h1{
+    color: white;
+    margin: 50px;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: yellow;}
+.py {width: 95%; background-color: aqua;}
+.java {width: 70%; background-color:pink;}
+
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#contact h1{
+    margin: 35px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#submit{
+    padding: 15px 20px;
+    margin: 20px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #000000dc;
+    color: white;
+    border: none;
+    outline: none;
+}
+#submit:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+	
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+
+        <h1 class="heading">HI ,I am venkatadri</h1>
+    </section>
+    <section id="about">
+        <h1 class="heading">About Me</h1>
+            <div class="about">
+            <div class="name">
+                <h2>venkatadri</h2>
+                <br>
+                <P>Hello, I am venkatadri. I am a Third year (B.tech) student from GITAM University, and I am 
+				very much pleased that I have got a chance to introduce you through my portfolio. I have previously 
+				done internships at oasis. Now through your Intelligent eyes, please take a look 
+				through my papers on which my Known Programming skills are mentioned.I, too,have a small and brief 
+				slide show presentation on my works.</P>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+	
+    <section id="skills">
+        <h1 class="heading">Skills</h1>
+    <p>HTML</p>
+	<div class="container">
+	<div class="skills html">90%</div>
+	</div>
+
+	<p>CSS</p>
+	<div class="container">
+	<div class="skills css">80%</div>
+	</div>
+
+	<p>JavaScript</p>
+	<div class="container">
+	<div class="skills js">85%</div>
+	</div>
+
+	<p>Python</p>
+	<div class="container">
+	<div class="skills py">100%</div>
+	</div>
+
+    <p>Java</p>
+	<div class="container">
+	<div class="skills java">70%</div>
+	</div>
+    </section>
+    
+	
+	
+	
+	<section id="contact">
+        <h1 class="heading">Contact</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="message" id="message" cols="65" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </section>
+</body>
+</html>
